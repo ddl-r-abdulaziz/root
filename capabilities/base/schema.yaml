@@ -2,3 +2,7 @@
 ---
 #@schema/default "hello from root"
 greeting: ""
+
+#@schema/default ["demo"]
+tags:
+- ""

@@ -2,3 +2,4 @@
 ---
 name: cap-demo
 greeting: #@ data.values.greeting
+tags: #@ data.values.tags
