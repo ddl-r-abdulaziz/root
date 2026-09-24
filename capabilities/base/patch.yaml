@@ -1,0 +1,4 @@
+#@ load("@ytt:data", "data")
+---
+name: cap-demo
+greeting: #@ data.values.greeting

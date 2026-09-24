@@ -1,1 +1,5 @@
 # root is the base of the tree - it has no dependencies.
+
+capabilities:
+- name: base
+  path: capabilities/base

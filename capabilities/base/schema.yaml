@@ -1,0 +1,4 @@
+#@data/values-schema
+---
+#@schema/default "hello from root"
+greeting: ""
