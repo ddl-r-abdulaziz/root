@@ -71,7 +71,7 @@ $(RENDER2_OUTPUT): lock.json
 	@touch $(RENDER2_OUTPUT)
 
 .PHONY: configure
-configure: $(CONFIGURE) $(RENDER2_OUTPUT) ## Apply base to an agent.yaml (stdin) using configure
+configure: $(CONFIGURE) $(RENDER2_OUTPUT) bundle ## Apply base to an agent.yaml (stdin) using configure
 	echo "" | $(CONFIGURE) $(RENDER2_OUTPUT) --apply base
 
 .PHONY: clean
