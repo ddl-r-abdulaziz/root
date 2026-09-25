@@ -61,10 +61,12 @@ lock: lock.json # Push the bundle, then generate lock.json
 
 ##@ Configure
 
+config.yaml: lock.json
+	$(CONFIGURE) lock.json --apply base > config.yaml
+
 .PHONY: configure
-configure: lock.json ## Apply base to an agent.yaml (stdin) using configure
-	$(CONFIGURE) lock.json --apply base
+configure: config.yaml ## Apply base to an agent.yaml (stdin) using configure
 
 .PHONY: clean
 clean: ## Ensure all build artifacts and deps are removed
-	rm -rf $(BUNDLE_OUTPUT) lock.json
+	rm -rf $(BUNDLE_OUTPUT) lock.json config.yaml
