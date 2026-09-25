@@ -3,6 +3,6 @@
 #@schema/default "hello from root"
 greeting: ""
 
-#@schema/default ["demo"]
+#@schema/default ["root"]
 tags:
 - ""
